@@ -1,0 +1,6 @@
+# copied from the parent repo by build.sh
+index.qmd
+schedule.qmd
+primer.qmd
+glossary.qmd
+/.quarto/

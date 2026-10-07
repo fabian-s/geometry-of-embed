@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+  render: [index.qmd, schedule.qmd, primer.qmd, glossary.qmd]
+
+website:
+  title: "Geometry of Embeddings"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Seminar
+      - href: schedule.qmd
+        text: Schedule
+      - href: primer.qmd
+        text: Primer
+      - href: glossary.qmd
+        text: Glossary
+
+format:
+  html:
+    theme: cosmo
+    toc: true
