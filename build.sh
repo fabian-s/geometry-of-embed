@@ -20,3 +20,10 @@ copy ../course-materials/concept-glossary.qmd glossary.qmd
 
 quarto render
 touch docs/.nojekyll
+
+# kick-off slide decks (self-contained revealjs HTML), linked from the schedule
+(cd ../course-materials && quarto render kickoff-slides.qmd)
+(cd ../course-materials/intro-slides && quarto render slides.qmd)
+mkdir -p docs/slides
+cp ../course-materials/kickoff-slides.html docs/slides/kickoff.html
+cp ../course-materials/intro-slides/slides.html docs/slides/intro.html
