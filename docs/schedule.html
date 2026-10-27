@@ -165,7 +165,7 @@ window.Quarto = {
   <li><a href="#practice-essay" id="toc-practice-essay" class="nav-link" data-scroll-target="#practice-essay">Christmas break: practice essay and peer review</a></li>
   <li><a href="#meeting-9" id="toc-meeting-9" class="nav-link" data-scroll-target="#meeting-9">Meeting 9: Meaning, grounding, and what geometry cannot settle</a></li>
   <li><a href="#meeting-10" id="toc-meeting-10" class="nav-link" data-scroll-target="#meeting-10">Meeting 10: Debiasing and the alignment hypothesis; practice-essay debrief</a></li>
-  <li><a href="#meeting-11" id="toc-meeting-11" class="nav-link" data-scroll-target="#meeting-11">Meeting 11: Supervised final essay session (three hours)</a></li>
+  <li><a href="#meeting-11" id="toc-meeting-11" class="nav-link" data-scroll-target="#meeting-11">Meeting 11: Supervised final essay session (three hours; time TBA)</a></li>
   </ul></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional resources</a></li>
   </ul>
@@ -270,12 +270,14 @@ window.Quarto = {
 <tr class="odd">
 <td style="text-align: left;">27 Jan</td>
 <td style="text-align: left;"><a href="#meeting-11">Meeting 11</a></td>
-<td style="text-align: left;">Supervised final essay session (three hours)</td>
+<td style="text-align: left;">Supervised final essay session (three hours; time TBA)</td>
 </tr>
 </tbody>
 </table>
-<p>Session Zero (asynchronous) is to be completed before Meeting 1; the kick-off session on 21 Oct leaves one week to start it.</p>
+<p>Before Meeting 1: enrol on Moodle, complete <a href="#session-zero">Session Zero</a> (mandatory, asynchronous), and upload your notes on the Meeting 1 readings by <strong>28 Oct, 16:00</strong>.</p>
 <p>Each meeting below lists guiding questions. They are aids for reading and note-taking, not a checklist: your notes need not answer all of them.</p>
+<p><strong>Notes on empirical papers.</strong> For the empirical readings (Meetings 3–6 and 10), we recommend organising your notes around these questions: What is the claim? At which representation level? Which metric or objective? Compared to what? What could confound it? Which adjustments or robustness checks? What is the result? And, most importantly: what is the <strong>warranted conclusion</strong> — what does the evidence actually show?</p>
+<p>Everyone reads the same papers every week. Only in Meeting 6, two <strong>branch groups</strong> each add one reading with a different focus and report it to the class along these questions; the groups are assigned at least one week before.</p>
 </section>
 <section id="session-zero" class="level2">
 <h2 class="anchored" data-anchor-id="session-zero">Session Zero: required preparation before Meeting 1</h2>
@@ -298,8 +300,8 @@ window.Quarto = {
 <li>3Blue1Brown, <em>Essence of Linear Algebra</em>, three chapters (text or video): <a href="https://www.3blue1brown.com/lessons/vectors">vectors</a>, <a href="https://www.3blue1brown.com/lessons/linear-transformations">linear transformations</a>, and <a href="https://www.3blue1brown.com/lessons/dot-products">dot products</a>. (Video runtimes roughly 10-15 minutes each.)</li>
 <li>Jay Alammar, <a href="https://jalammar.github.io/illustrated-word2vec/"><em>The Illustrated Word2vec</em></a> and <a href="https://jalammar.github.io/illustrated-transformer/"><em>The Illustrated Transformer</em></a>: read the overview sections, including attention, MLP blocks, and residual connections.</li>
 <li>Optional reinforcement: <a href="https://www.youtube.com/watch?v=FgakZw6K1QQ"><em>StatQuest: PCA step-by-step</em></a> and, as background only, Distill’s <a href="https://distill.pub/2016/augmented-rnns/"><em>Attention and Augmented Recurrent Neural Networks</em></a> — soft attention in RNN memory models, <em>not</em> transformer self-attention, which the Illustrated Transformer covers.</li>
-<li>Course handout: <em>Representation-comparison primer</em> (distributed separately), for terminology needed in Meetings 4–5.</li>
-<li>Course handout: <em>Concept glossary</em> (distributed separately) — one-paragraph definitions of terms the readings use without explanation; individual meetings point to the relevant entries.</li>
+<li>Course handout: <a href="https://fabian-s.github.io/geometry-of-embed/primer.html"><em>Representation-comparison primer</em></a>, for terminology needed in Meetings 4–5.</li>
+<li>Course handout: <a href="https://fabian-s.github.io/geometry-of-embed/glossary.html"><em>Concept glossary</em></a> — one-paragraph definitions of terms the readings use without explanation; individual meetings point to the relevant entries.</li>
 </ul>
 </section>
 <section id="meeting-1" class="level3">
@@ -361,7 +363,7 @@ window.Quarto = {
 <p><strong>Required common readings</strong></p>
 <ul>
 <li>Kornblith, S. et al.&nbsp;(2019). <a href="https://proceedings.mlr.press/v97/kornblith19a.html"><em>Similarity of Neural Network Representations Revisited</em></a>. Read <strong>Sections 1–3</strong> (four pages). Treat linear CKA (its Equation 4) as given: the kernel-theory derivation in Section 3 is background, not required reading. Sections 1–3 define the method and its invariances; the evidence that CKA <em>works</em> lives in the unassigned Sections 5–6, so this week’s warranted conclusion is “CKA has the right invariances” — no more. CCA, the paper’s foil, is glossed in the concept glossary.</li>
-<li>Course handout <em>Representation-comparison primer</em>: both “Three notions of similarity” <strong>and</strong> “A score needs a reference point” (two pages; distributed separately).</li>
+<li>Course handout <a href="https://fabian-s.github.io/geometry-of-embed/primer.html"><em>Representation-comparison primer</em></a>: both “Three notions of similarity” <strong>and</strong> “A score needs a reference point” (two pages).</li>
 <li>Kriegeskorte, N. et al.&nbsp;(2008). <a href="https://doi.org/10.3389/neuro.06.004.2008"><em>Representational Similarity Analysis</em></a>: the introduction and <strong>method STEPS 1, 2, 4, and 5</strong> (the dissimilarity-matrix construction and the randomization test); skim STEP 3’s model catalogue and the figure pages (about six pages of text spread over pp.&nbsp;1–11).</li>
 </ul>
 <p><strong>Discussion focus:</strong> invariances; global versus local structure (see the primer’s worked contrast); layer selection as a multiple-comparisons problem (previewed here, developed in Meeting 5); and why a similarity score needs an interpretable null baseline.</p>
@@ -399,12 +401,12 @@ window.Quarto = {
 <li>Liang, V. W. et al.&nbsp;(2022). <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/702f4db7543a7432431df588d57bc7c9-Abstract-Conference.html"><em>Mind the Gap: Understanding the Modality Gap in Multi-modal Contrastive Representation Learning</em></a>. Read <strong>Sections 1–2, 4, and 7</strong> (eight pages in total); skim the intervening theory and application sections for their headings and figures only. This skim is orientation and does not need to appear in the handwritten notes. Section 4’s central result depends on the temperature parameter of the contrastive loss — read the <em>temperature-scaled softmax</em> and <em>InfoNCE</em> glossary entries first.</li>
 <li>Radford et al.&nbsp;(2021), <a href="https://proceedings.mlr.press/v139/radford21a.html"><em>Learning Transferable Visual Models From Natural Language Supervision</em></a>: <strong>Sections 1, 2.1–2.3, Figure 1, and Section 3 through §3.1.2</strong> — the motivation and mechanism of zero-shot transfer, not the results (about five pages). Skip the architecture and engineering details in Sections 2.4–2.5 and the full experiments section.</li>
 </ul>
-<p><strong>Assigned secondary branches — prepare exactly one</strong></p>
+<p><strong>Secondary readings for the two branch groups — each group prepares one and reports it to the class</strong></p>
 <ul>
 <li><strong>Accessible empirical case:</strong> Goh, G. et al.&nbsp;(2021). <a href="https://distill.pub/2021/multimodal-neurons/"><em>Multimodal Neurons in Artificial Neural Networks</em></a>. Long but visual — read as a guided browse, not line by line.</li>
 <li><strong>Alternative objective:</strong> Assran et al.&nbsp;(2023), <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Assran_Self-Supervised_Learning_From_Images_With_a_Joint-Embedding_Predictive_Architecture_CVPR_2023_paper.html"><em>Self-Supervised Learning From Images With a Joint-Embedding Predictive Architecture</em></a>: abstract, <strong>Sections 1–3</strong>, and the headline results in Section 5 (figures and tables only, so the branch’s notes have evidence to report; about four pages). Denser than the other branch.</li>
 </ul>
-<p>The recommended questions for empirical papers apply to the modality-gap paper and to your branch reading. The CLIP excerpt deliberately stops before its evidence sections; for it, simply note along the lines of “objective described, evidence not assigned”.</p>
+<p>The recommended questions for empirical papers apply to the modality-gap paper and, for the branch groups, to their branch reading. The CLIP excerpt deliberately stops before its evidence sections; for it, simply note along the lines of “objective described, evidence not assigned”.</p>
 <p><strong>Discussion focus:</strong> word2vec, contrastive learning, and CLIP as related objectives — come prepared to connect the skip-gram negative-sampling objective from Meeting 1 to the CLIP loss (no assigned reading makes this bridge; it is a recall-and-connect task); pairwise alignment versus distributional equality; why a modality gap matters for claims of a single shared space.</p>
 <p><strong>Guiding questions for your notes:</strong></p>
 <ol type="1">
@@ -459,7 +461,7 @@ window.Quarto = {
 </section>
 <section id="practice-essay" class="level3">
 <h3 class="anchored" data-anchor-id="practice-essay">Christmas break: practice essay and peer review</h3>
-<p>The practice essay is a dress rehearsal for the final essay session, run like a small conference: you submit an essay, review one essay by another participant, and the instructors act as area chairs — as at a conference, they oversee the reviews and add a short meta-review. Everyone is expected to take part; submitting an essay commits you to reviewing one.</p>
+<p>The practice essay is a dress rehearsal for the final essay session, run like a small conference: you submit an essay, review one essay by another participant, and the instructors act as area chairs — as at a conference, they check each review and add their own short meta-review. Everyone is expected to take part; submitting an essay commits you to reviewing one.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -482,7 +484,7 @@ window.Quarto = {
 </tr>
 <tr class="even">
 <td style="text-align: left;">13–20 Jan</td>
-<td style="text-align: left;">The instructors, as area chairs, read essays and reviews and return both with a short meta-review</td>
+<td style="text-align: left;">The instructors, as area chairs, check each review, add their own short meta-review, and return both with the essay</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">20 Jan</td>
@@ -542,7 +544,7 @@ window.Quarto = {
 <hr>
 </section>
 <section id="meeting-11" class="level3">
-<h3 class="anchored" data-anchor-id="meeting-11">Meeting 11: Supervised final essay session (three hours)</h3>
+<h3 class="anchored" data-anchor-id="meeting-11">Meeting 11: Supervised final essay session (three hours; time TBA)</h3>
 <p>Six essay prompts will be offered in the session. They are likely to cover:</p>
 <ol type="1">
 <li>representation similarity, calibration, and the warranted convergence claim;</li>
@@ -552,7 +554,7 @@ window.Quarto = {
 <li>meaning and grounding; and</li>
 <li>applications: (e.g.&nbsp;debiasing).</li>
 </ol>
-<p>Students answer exactly two prompts using only their handwritten weekly notes for background; printouts of the notes submitted on Moodle are handed out in the session. Passages that contain prepared essay answers (e.g.&nbsp;from the practice essay) are blacked out.</p>
+<p>Students answer exactly two prompts of their choice, using only their handwritten weekly notes for background; printouts of the notes submitted on Moodle are handed out in the session. Each essay is marked out of 10 for conceptual accuracy, use of evidence and methodological reasoning, integration across meetings, and clarity of argument. Passages that contain prepared essay answers (e.g.&nbsp;from the practice essay) are blacked out.</p>
 <p><strong>Final-essay checklist.</strong> An effective answer should:</p>
 <ul>
 <li>define the claim it is about;</li>
