@@ -27,3 +27,13 @@ touch docs/.nojekyll
 mkdir -p docs/slides
 cp ../course-materials/kickoff-slides.html docs/slides/kickoff.html
 cp ../course-materials/intro-slides/slides.html docs/slides/intro.html
+
+# per-meeting slide decks (technical clarifications), linked from the schedule
+deck() {  # deck <session dir> <qmd file> <meeting number>
+  (cd "../$1" && quarto render "$2")
+  cp "../$1/${2%.qmd}.html" "docs/slides/meeting-$3.html"
+}
+deck session-01 slides.qmd 1
+deck session-02 slides.qmd 2
+deck session-03 slides-balestriero-lecun.qmd 3
+deck session-04 slides.qmd 4
